@@ -1,0 +1,23 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/longganghe?useUnicode=true&characterEncoding=UTF-8&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${file.path}
+
+
+server:
+  port: 8081
+
+  #文件保存的磁盘路径
+file:
+  path: C://upload/
+
+#mybatis-plus:
+#  mapper-locations: classpath*:com/example/demo/mapper/xml/*Mapper.xml
+#  global-config:
+#    banner: false
